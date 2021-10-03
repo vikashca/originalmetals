@@ -1,0 +1,29 @@
+#header {
+    background-color: #1a1a1a;
+    .navbar-inverse {
+        margin: 0;
+        background-color: #1a1a1a;
+        border-radius: 0;
+        padding: 20px 0;
+        border: 0;
+    }
+    .top-header {
+        background-color: #000000;
+        padding: 10px 0;
+        .top-social {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            li {
+                a {}
+            }
+        }
+        p {
+            color: #fff;
+            margin: 0;
+        }
+    }
+}

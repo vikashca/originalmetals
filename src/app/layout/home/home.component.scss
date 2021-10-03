@@ -1,0 +1,23 @@
+.home-slider {
+    .carousel {
+        .carousel-inner {
+            .item {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .carousel-indicators {
+            li {
+                margin-right: 5px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            .active {
+                background-color: #ffcc29;
+                border-color: #ffcc29;
+            }
+        }
+    }
+}

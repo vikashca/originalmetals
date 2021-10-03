@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout-content {
+    padding: 10px 15px;
+    margin-left: 245px;
+}
+
+.layout-content.showLayout {
+    margin-left: 0px;
+}
+
+.side-bar.hideSidebar {
+    margin-left: -245px;
+}
