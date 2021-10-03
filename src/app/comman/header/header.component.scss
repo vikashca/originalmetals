@@ -4,8 +4,68 @@
         margin: 0;
         background-color: #1a1a1a;
         border-radius: 0;
-        padding: 20px 0;
         border: 0;
+        .navbar-nav {
+            li.active {
+                position: relative;
+                a {
+                    background-color: transparent;
+                    color: #ffcc29;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -moz-transform: translateX(-50%);
+                    -o-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    width: 90%;
+                    height: 2px;
+                    background-color: #ffcc29;
+                    opacity: 1;
+                    -webkit-transition: 0.6s linear;
+                    -moz-transition: 0.6s linear;
+                    -o-transition: 0.6s linear;
+                    -ms-transition: 0.6s linear;
+                    transition: 0.6s linear;
+                }
+            }
+            li {
+                padding: 20px 0;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -moz-transform: translateX(-50%);
+                    -o-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    width: 90%;
+                    height: 2px;
+                    background-color: #ffcc29;
+                    opacity: 0;
+                    -webkit-transition: 0.6s linear;
+                    -moz-transition: 0.6s linear;
+                    -o-transition: 0.6s linear;
+                    -ms-transition: 0.6s linear;
+                    transition: 0.6s linear;
+                }
+                &:hover::after {
+                    opacity: 1;
+                }
+                a {
+                    &:hover {
+                        color: #ffcc29;
+                    }
+                }
+            }
+        }
     }
     .top-header {
         background-color: #000000;
@@ -17,9 +77,9 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            li {
-                a {}
-            }
+            // li {
+            //     a {}
+            // }
         }
         p {
             color: #fff;
